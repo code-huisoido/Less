@@ -1,0 +1,62 @@
+//Variables
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+
+#header {
+  color: @light-blue;
+}
+
+//Mixins
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#menu a {
+  color: #111;
+  .bordered;
+}
+
+.post a {
+  color: red;
+  .bordered;
+}
+
+//you can mix-in class selectors and id selectors,e.g.
+.a, #b {
+  color: red;
+}
+
+.mixin-class {
+  .a();
+}
+
+.mixin-id {
+  #b();
+}
+
+//If you wnat to create a mixin but you do not want that mixin to be output,
+//you canput parentheses after it.
+.my-mixin {
+  color: black;
+}
+
+.my-other-mixin() {
+  background: white;
+}
+
+.class {
+  .my-mixin;
+  .my-other-mixin;
+}
+
+.my-hover-mixin() {
+  &:hover {
+    border: 1px solid red;
+  }
+}
+
+button {
+  .my-hover-mixin();
+}
+

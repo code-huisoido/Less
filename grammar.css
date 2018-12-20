@@ -35,4 +35,30 @@
 button:hover {
   border: 1px solid red;
 }
+.class {
+  color: black;
+}
+.unimportant {
+  background: #f5f5f5;
+  color: #900;
+}
+.important {
+  background: #f5f5f5 !important;
+  color: #900 !important;
+}
+#header {
+  -webit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.button {
+  -webit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+#footer {
+  -webit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=grammar.css.map */
